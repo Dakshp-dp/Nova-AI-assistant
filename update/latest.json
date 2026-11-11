@@ -1,11 +1,11 @@
 {
-  "version": "0.1.33",
-  "notes": "Public edition: modern NOVA desktop companion with signed in-app updates.",
-  "pub_date": "2026-11-11T06:17:59Z",
+  "version": "0.1.34",
+  "notes": "Add custom OpenAI-compatible API providers using a base URL, API key and model ID.",
+  "pub_date": "2026-11-11T07:54:12Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/Dakshp-dp/Nova-AI-assistant/releases/download/v0.1.33-public-beta.1/Nova-Setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbGk3RDdFblMvQ3U1cDJkd1FuM3pjVXJLeVpObiswN1VvVG9VS01DMXBkQnpkTWtheFZnVHl6MGhhUEVHenlpWWdnRklydlFPK2l5aUFvblhNQVUvM0d2MWNISmNRb2dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0Mzc3MDkxCWZpbGU6Tm92YV8wLjEuMzNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4zMwpRS1N1c0RiY3NobXpFUDBuV2dBcUFlL0piTHYzcEN1UUFJb2l4eVJ5cTJoNjBXN05wcUlFRzNIM0FpVDVDU3VJenpHZmZZYkhUOHBSekpNSk43SUNCdz09Cg=="
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbGk3RDdFblMvQ2cweEFpZFJuL1NPdHdZeXg0RWV0K00rWmhBenZmb3ZzWWRmZk01Z0ZhVUJ2TzhaelJ6dytDaG9SUVIvd1pSUDYvbGhaV0tJbWRwN3duSDdLMFZMOFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzgzNDcxCWZpbGU6Tm92YV8wLjEuMzRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4zNApGSnNGL3VLYkFrc1BIYWtqR0w5VHQvVHZRTk1qZnc1anlTOFhVb2dTNjdvVG42NG9yTy9kNmkvc1JTZytaaFpmRnl1NHZsNk1xN0dUWUd4U1pBeWpCZz09Cg==",
+      "url": "https://github.com/Dakshp-dp/Nova-AI-assistant/releases/download/v0.1.34-public-beta.1/Nova-Setup.exe"
     }
   }
 }
