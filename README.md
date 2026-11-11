@@ -6,7 +6,7 @@ NOVA is a Windows AI desktop companion created and customized by **Daksh**. Chat
 
 ## Download
 
-### [Download NOVA for Windows](https://github.com/Dakshp-dp/Nova-AI-assistant/releases/tag/v0.1.33-public-beta.1)
+### [Download NOVA for Windows](https://github.com/Dakshp-dp/Nova-AI-assistant/releases/tag/v0.1.34-public-beta.1)
 
 Choose **Nova-Setup.exe** under the release's **Assets**. Send that installer to a friend or share the release link; the source archive is available separately.
 
@@ -18,6 +18,7 @@ This is an initial test build without a Windows publisher certificate. Windows m
 
 - **Choose your look.** Pick Orb or Anime Girl and adjust the companion's size. Orb watches your pointer, wanders, and hides after about 15 seconds without interaction.
 - **Talk naturally.** Type a message or configure microphone input and spoken replies.
+- **Bring your own provider.** Save custom OpenAI-compatible API connections using a base URL, API key and exact model ID. Test, switch, edit and remove profiles from Model settings or setup. Local Ollama can connect without a key.
 - **Do everyday tasks.** Ask NOVA to open apps and websites and help with routine PC actions.
 - **Work with your screen.** Ask about visible content or request supported mouse and keyboard actions.
 - **Point things out.** Use screen marking and drawing while getting help.
@@ -38,6 +39,8 @@ Internet access may be required for Microsoft WebView2, speech-model downloads, 
 ## AI, voice, and your data
 
 Setup offers ChatGPT, Claude, and API-key connection options. Each user connects their own accounts. Provider eligibility, subscription requirements, usage limits, and API charges depend on the provider; showing a connection option does not guarantee that every account can use it.
+
+For another OpenAI-compatible service, open **Model → Custom providers → Add custom provider** and enter its name, base URL, API key and model ID. Custom keys use Windows-encrypted storage. Advanced options declare model support for tool calling and screen images, and its context limit. The connection test makes a short API request, which can use credits. APIs with different protocols or authentication formats need a dedicated integration.
 
 Microphone recognition uses a separately downloaded local speech model. Spoken replies currently require a **Fish Audio account and API key**.
 
