@@ -1,0 +1,11 @@
+{
+  "version": "0.1.33",
+  "notes": "Public edition: modern NOVA desktop companion with signed in-app updates.",
+  "pub_date": "2026-11-11T06:17:59Z",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://github.com/Dakshp-dp/Nova-AI-assistant/releases/download/v0.1.33-public-beta.1/Nova-Setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbGk3RDdFblMvQ3U1cDJkd1FuM3pjVXJLeVpObiswN1VvVG9VS01DMXBkQnpkTWtheFZnVHl6MGhhUEVHenlpWWdnRklydlFPK2l5aUFvblhNQVUvM0d2MWNISmNRb2dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0Mzc3MDkxCWZpbGU6Tm92YV8wLjEuMzNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4zMwpRS1N1c0RiY3NobXpFUDBuV2dBcUFlL0piTHYzcEN1UUFJb2l4eVJ5cTJoNjBXN05wcUlFRzNIM0FpVDVDU3VJenpHZmZZYkhUOHBSekpNSk43SUNCdz09Cg=="
+    }
+  }
+}
