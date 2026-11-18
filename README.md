@@ -6,7 +6,7 @@ NOVA is a Windows AI desktop companion created and customized by **Daksh**. Chat
 
 ## Download
 
-### [Download NOVA for Windows](https://github.com/Dakshp-dp/Nova-AI-assistant/releases/tag/v0.1.34-public-beta.1)
+### [Download NOVA for Windows](https://github.com/Dakshp-dp/Nova-AI-assistant/releases/tag/v0.1.35-public-beta.1)
 
 Choose **Nova-Setup.exe** under the release's **Assets**. Send that installer to a friend or share the release link; the source archive is available separately.
 
@@ -39,6 +39,8 @@ Internet access may be required for Microsoft WebView2, speech-model downloads, 
 ## AI, voice, and your data
 
 Setup offers ChatGPT, Claude, and API-key connection options. Each user connects their own accounts. Provider eligibility, subscription requirements, usage limits, and API charges depend on the provider; showing a connection option does not guarantee that every account can use it.
+
+For Groq, choose **Free-tier AI → Set up Groq** in Model settings, or use the Groq card on the first-run **Give me a brain** screen. Create your own Groq key, choose a model, and select **Test & connect**. Free-tier quotas apply; paid accounts can incur API charges. Groq was suggested by **Soul**.
 
 For another OpenAI-compatible service, open **Model → Custom providers → Add custom provider** and enter its name, base URL, API key and model ID. Custom keys use Windows-encrypted storage. Advanced options declare model support for tool calling and screen images, and its context limit. The connection test makes a short API request, which can use credits. APIs with different protocols or authentication formats need a dedicated integration.
 
