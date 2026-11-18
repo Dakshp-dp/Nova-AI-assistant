@@ -1,11 +1,11 @@
 {
-  "version": "0.1.34",
-  "notes": "Add custom OpenAI-compatible API providers using a base URL, API key and model ID.",
-  "pub_date": "2026-11-11T07:54:12Z",
+  "version": "0.1.35",
+  "notes": "Groq free-tier setup in Model settings and first-run onboarding. Groq suggested by Soul.",
+  "pub_date": "2026-11-18T18:26:19Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbGk3RDdFblMvQ2cweEFpZFJuL1NPdHdZeXg0RWV0K00rWmhBenZmb3ZzWWRmZk01Z0ZhVUJ2TzhaelJ6dytDaG9SUVIvd1pSUDYvbGhaV0tJbWRwN3duSDdLMFZMOFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzgzNDcxCWZpbGU6Tm92YV8wLjEuMzRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4zNApGSnNGL3VLYkFrc1BIYWtqR0w5VHQvVHZRTk1qZnc1anlTOFhVb2dTNjdvVG42NG9yTy9kNmkvc1JTZytaaFpmRnl1NHZsNk1xN0dUWUd4U1pBeWpCZz09Cg==",
-      "url": "https://github.com/Dakshp-dp/Nova-AI-assistant/releases/download/v0.1.34-public-beta.1/Nova-Setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbGk3RDdFblMvQ3YrV0ppUXRoY3BqWnpEVzdZeE8wK0FkSFRWekJuSHJhTmNhTFlkU2RxYTU4NzB6SytKd2l1RVFSaVM4eVpoZEcyWWxNczBGTFdjL3pyNFhQUmQxK3dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDI2MzM1CWZpbGU6Tm92YV8wLjEuMzVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4zNQpRRTdrYTYvUFdBeTVQTWVaRmtLYWNocllQRm92a0dNUjFLU1N1azJha3FkM0FkNEd3WUppRVZMdy94TTF2REt5NFNDc1NJeW9KT2p4dmQxYzBmNVZBZz09Cg==",
+      "url": "https://github.com/Dakshp-dp/Nova-AI-assistant/releases/download/v0.1.35-public-beta.1/Nova-Setup.exe"
     }
   }
 }
