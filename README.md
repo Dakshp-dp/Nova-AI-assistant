@@ -2,66 +2,59 @@
 
 **A little presence. A lot of possibility.**
 
-NOVA is a Windows AI desktop companion created and customized by **Daksh**. Chat, use voice commands, open apps and websites, and get help with what's on your screen—all from a small animated companion.
+NOVA is a Windows AI desktop companion created and customized by **Daksh (FanoF)**. Chat, talk, work with webpages, and get screen-aware help through a small animated companion.
 
-## Download
+## Beta 0.4.1
 
-### [Download NOVA for Windows](https://github.com/Dakshp-dp/Nova-AI-assistant/releases/tag/v0.1.35-public-beta.1)
+[Download NOVA beta 0.4.1](https://github.com/Dakshp-dp/Nova-AI-assistant/releases/tag/v0.4.1-public-beta.1) · [Complete setup guide](SETUP_GUIDE.md) · [Release notes](RELEASE_NOTES.md) · [Full history](CHANGELOG.md)
 
-Choose **Nova-Setup.exe** under the release's **Assets**. Send that installer to a friend or share the release link; the source archive is available separately.
+Choose **Nova-Setup.exe** to install the Windows x64 app. For browser tasks, also download **Nova-Browser-Extension.zip** and follow the one-time extension setup. Windows 11 is the tested target. This remains a beta; clean-PC installation and every provider combination have not been verified.
 
-**Public beta · Windows 11 · x64**
+### What changed
 
-This is an initial test build without a Windows publisher certificate. Windows may show an unknown-publisher or reputation warning. Clean-PC installation and live AI-provider sign-in still need testing. **Signed in-app updates are enabled for the Public edition.**
+- **Automatic browser tasks:** enable the Chrome/Edge extension once. When you ask NOVA to work in your browser, it starts from the active tab, continues across ordinary websites, and follows related tabs opened during its actions.
+- **Less screenshot overhead:** compact page controls, real destination URLs and local result waiting let NOVA act without a model call for each click or unchanged page update. Existing Windows and screenshot tools remain the fallback.
+- **Task-scoped access:** NOVA stops reading when the request finishes or is cancelled. Pause stops automatic browser access. Selecting an unrelated tab interrupts the task instead of silently retargeting it.
+- **Better tab handling:** ordinary web navigation reuses the existing tab, including native fallback when the extension is unavailable. Arbitrary site popups are still subject to browser behavior.
+- **Download inspection:** NOVA can check a named Downloads file, partial-file/size status and its Windows signature without running it. Downloaded does not mean installed; launching downloaded EXEs still requires a manual handoff under the existing safety rules.
 
-## Meet your desktop companion
+The local Search → delayed results → matching result demo previously measured **3 model calls with the extension versus 6 with native tools**. Those small-fixture measurements are development evidence, not a speed guarantee for every website or model. The 0.4.1 regression checks also cover cross-site access, related tabs, task-end shutdown and Pause.
 
-- **Choose your look.** Pick Orb or Anime Girl and adjust the companion's size. Orb watches your pointer, wanders, and hides after about 15 seconds without interaction.
-- **Talk naturally.** Type a message or configure microphone input and spoken replies.
-- **Bring your own provider.** Save custom OpenAI-compatible API connections using a base URL, API key and exact model ID. Test, switch, edit and remove profiles from Model settings or setup. Local Ollama can connect without a key.
-- **Do everyday tasks.** Ask NOVA to open apps and websites and help with routine PC actions.
-- **Work with your screen.** Ask about visible content or request supported mouse and keyboard actions.
-- **Point things out.** Use screen marking and drawing while getting help.
-- **Keep things simple.** A charcoal dashboard, mint accents, and guided setup.
+## What NOVA can do
 
-Capabilities depend on your connected provider, chosen model, account access, and configuration.
+- Type or voice chat, spoken replies when configured, and your choice of Orb or Anime Girl.
+- Open apps and websites, work supported webpage controls, and use Windows mouse/keyboard tools where allowed.
+- Read screen content when needed for your request; mark and explain supported screen areas.
+- Save reminders and commitments through the companion.
+- Connect supported AI accounts, Groq, local Ollama, or custom OpenAI-compatible API providers.
 
-## Get started
+Capabilities depend on the model, provider, account access, Windows permissions and website. Canvas, restricted browser pages, some frames and trusted-input-only controls can require native tools or a user handoff. This is not unrestricted autonomous PC control.
 
-1. Download and run **Nova-Setup.exe** from the release assets.
-2. Follow the setup guide and choose your companion.
-3. Connect your own supported AI account or enter your own API key.
-4. Configure microphone recognition and spoken replies if you want voice.
-5. Open NOVA through its tray icon or configured shortcut. The default shortcut is **Ctrl + Shift + S**.
+## Setup
 
-Internet access may be required for Microsoft WebView2, speech-model downloads, and AI services.
+1. Install and launch **Nova-Setup.exe**.
+2. Connect your own supported AI account or provider key. For Groq, use **Free-tier AI → Set up Groq**; quotas apply. The Groq option was suggested by **Soul**.
+3. Configure voice if wanted. Microphone recognition downloads a local model; spoken replies currently need your own Fish Audio account/key.
+4. Extract **Nova-Browser-Extension.zip** to a permanent folder. Load it through `chrome://extensions` or `edge://extensions` → Developer mode → Load unpacked.
+5. Open the extension → **Enable automatic tasks** → approve Chrome/Edge's website-access prompt once. There is no per-tab Connect step after this.
+6. Ask NOVA something such as “Search YouTube for a budget laptop review and open a suitable result.”
 
-## AI, voice, and your data
+See the [complete setup and troubleshooting guide](SETUP_GUIDE.md), including upgrades from the old per-tab prototype. The default show/hide shortcut is **Ctrl + Shift + S**; your configured shortcuts may differ.
 
-Setup offers ChatGPT, Claude, and API-key connection options. Each user connects their own accounts. Provider eligibility, subscription requirements, usage limits, and API charges depend on the provider; showing a connection option does not guarantee that every account can use it.
+## Accounts and privacy
 
-For Groq, choose **Free-tier AI → Set up Groq** in Model settings, or use the Groq card on the first-run **Give me a brain** screen. Create your own Groq key, choose a model, and select **Test & connect**. Free-tier quotas apply; paid accounts can incur API charges. Groq was suggested by **Soul**.
+Every user supplies their own accounts/keys. Subscription eligibility, quotas and API billing are provider-specific; a connection option does not guarantee access for every account. Custom providers need an OpenAI-compatible Chat Completions endpoint, API key if required, and exact model ID. Tool calling and image support must match the chosen model. Ollama can be keyless when configured locally.
 
-For another OpenAI-compatible service, open **Model → Custom providers → Add custom provider** and enter its name, base URL, API key and model ID. Custom keys use Windows-encrypted storage. Advanced options declare model support for tool calling and screen images, and its context limit. The connection test makes a short API request, which can use credits. APIs with different protocols or authentication formats need a dedicated integration.
+Automatic browser tasks require a one-time optional permission for ordinary HTTP/HTTPS websites. The permission remains enabled so you do not need a grant for each tab; NOVA's task controller stops page reads outside an active request. Password/payment/private fields and protected authentication/security pages remain excluded. Task messages and relevant page/screen content may be sent to your chosen AI provider. Pause or remove the extension to stop its access. Daksh's private credentials, settings and conversations are not included in the installer.
 
-Microphone recognition uses a separately downloaded local speech model. Spoken replies currently require a **Fish Audio account and API key**.
+## Updates and editions
 
-Messages and screen content used for a task may be sent to the AI provider you connect. Daksh's personal credentials, conversations, and settings are not included in the Public installer.
+The shared installer is **Public edition**. It checks the signed NOVA update feed after startup and periodically while running. Use **About → Check for updates**, then **Install & restart** when offered. Updates restart NOVA, not your PC. Extension files loaded unpacked are separate: update their extracted files and reload the extension when the release guide calls for it.
 
-## Editions and updates
+Daksh's **Personal edition** stays locally managed. The Windows installer remains unsigned as a publisher package; the in-app updater signature is a separate integrity check, not a Windows publisher certificate.
 
-The shared installer displays **Public edition**. Daksh's existing local installation remains **Personal edition**.
+## Feedback and source
 
-Public editions check NOVA's own update feed automatically after startup and every six hours. When a newer version is ready, open **About → Install & restart** or use the tray update item. You can also choose **Check for updates** manually. NOVA verifies the update's signature before installation and preserves your account data and settings. Checks need an internet connection and NOVA running; updates do not force a restart while you work.
+[Report a bug](https://github.com/Dakshp-dp/Nova-AI-assistant/issues) with the version, task and actual result. Remove private messages and credentials from screenshots/logs.
 
-The Personal edition stays locally managed. Installers also remain available from [Releases](https://github.com/Dakshp-dp/Nova-AI-assistant/releases).
-
-## Feedback
-
-[Report a bug or suggest a feature](https://github.com/Dakshp-dp/Nova-AI-assistant/issues). Include your NOVA version, what you tried, and what happened. Remove private messages, credentials, and account details from screenshots and logs.
-
-## Source and licenses
-
-The release includes **Nova-Source.zip**, containing the corresponding app source, build instructions, original license, and third-party notices. **SHA256SUMS.txt** contains checksums for the installer and source archive; **READ-ME-FIRST.txt** explains this test build.
-
-NOVA includes adapted upstream and third-party components. Their original license and copyright notices remain applicable. See [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+Release assets include the installer, browser extension, corresponding **Nova-Source.zip**, setup guide and SHA256 checksums. Original license and third-party notices remain applicable: [LICENSE](LICENSE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
