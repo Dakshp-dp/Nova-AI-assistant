@@ -1,11 +1,11 @@
 {
-  "version": "0.1.35",
-  "notes": "Groq free-tier setup in Model settings and first-run onboarding. Groq suggested by Soul.",
-  "pub_date": "2026-11-18T18:26:19Z",
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbGk3RDdFblMvQ3YrV0ppUXRoY3BqWnpEVzdZeE8wK0FkSFRWekJuSHJhTmNhTFlkU2RxYTU4NzB6SytKd2l1RVFSaVM4eVpoZEcyWWxNczBGTFdjL3pyNFhQUmQxK3dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDI2MzM1CWZpbGU6Tm92YV8wLjEuMzVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4zNQpRRTdrYTYvUFdBeTVQTWVaRmtLYWNocllQRm92a0dNUjFLU1N1azJha3FkM0FkNEd3WUppRVZMdy94TTF2REt5NFNDc1NJeW9KT2p4dmQxYzBmNVZBZz09Cg==",
-      "url": "https://github.com/Dakshp-dp/Nova-AI-assistant/releases/download/v0.1.35-public-beta.1/Nova-Setup.exe"
-    }
-  }
+    "version":  "0.4.1",
+    "notes":  "NOVA beta 0.4.1: automatic task-scoped browser control, cross-site and task-tab access, native fallback, download inspection and a complete setup guide. Update the browser extension separately and enable automatic tasks once.",
+    "pub_date":  "2026-11-20T20:03:21Z",
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "url":  "https://github.com/Dakshp-dp/Nova-AI-assistant/releases/download/v0.4.1-public-beta.1/Nova-Setup.exe",
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbGk3RDdFblMvQ3VESGZmeUZGTGVEckE0VlpiTnpyMDVPQmkzQTl4U1ErWmw0eHFPeTk4Q09yWW50MExMQkJIQXl5UkVhU0tOK1dKMjFrTnRNMThaV29Dam1YWEtGNmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjA0ODkxCWZpbGU6Tm92YV8wLjQuMV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjEKMHZMTUJpallkZjhvZzlvczR1a0ZmazhNV0Z6T1pKd2pPUE1ic0UxVTc5eFFtNkxvUUhHNWpOM1h4ekRlNlJwNU42M21ydnUvRm9RSkVkMXJxKzJrQmc9PQo="
+                                         }
+                  }
 }
